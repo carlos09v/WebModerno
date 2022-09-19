@@ -1,0 +1,22 @@
+{
+  "name": "funcionarios",
+  "version": "1.0.0",
+  "description": "",
+  "main": "funcionarios.js",
+  "scripts": {
+    "start": "nodemon",
+    "dev": "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "0.27.2"
+  },
+  "_comments": {
+    "1" : "Recriar(atualizar) a pasta node.modules | npm i com as devidas dependencias no package.json",
+    "2": "Foi instalado o axios e as dependencias dele usando npm i axios",
+    "3": "Scripts = npm start - npm run ... (se ñ estiver definido nos scripts do npm)"
+  }
+}

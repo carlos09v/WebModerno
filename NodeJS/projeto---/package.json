@@ -1,0 +1,21 @@
+{
+  "name": "projeto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/servidor.js",
+  "scripts": {
+    "start": "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.16.2"
+  },
+  "_comments": {
+    "0": "Baixar o Postman | requisições de api (API platform)",
+    "1": "npm init -y | iniciar package.json",
+    "2": "npm i --save express@4.16.2 -E | baixar e salvar o express na versao exata (4.16.2)"
+  }
+}

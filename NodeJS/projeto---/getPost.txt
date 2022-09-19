@@ -1,0 +1,15 @@
+O HTTP é o protocolo responsável pela comunicação de sites na web. Quando acessamos um site, é esse protocolo que utilizamos. Esse protocolo possui alguns métodos, ou, como também são chamados, verbos.
+
+Os verbos HTTP definem qual ação deve ser realizada e, dependendo do verbo, o servidor pode dar uma resposta diferente.
+
+Um dos verbos mais comuns do HTTP é o GET. Quando utilizamos o GET, os parâmetros são passados no cabeçalho da requisição. Por isso, podem ser vistos pela URI.  O POST, ao contrário do GET, envia os parâmetros no corpo da requisição HTTP. Escondendo eles da URI.
+
+Ambos os verbos são muito utilizado em formulários na web e possuem algumas outras diferenças entre si. Como o GET envia os dados no cabeçalho da requisição, ele tende a ser, não é uma regra,um pouco mais performático que o POST.
+
+Porém, por enviar os dados no cabeçalho da requisição, o GET tem um tamanho máximo de dados que podem ser enviados, que no geral é de 255 caracteres. Com POST, podemos enviar informações um pouco maiores, como imagens. Ou seja, se tentarmos passar uma grande quantidade de informações via GET, algumas partes podem ser perdidas no caminho. Com isso você pode estar pensando que utilizar o POST é o melhor caminho já que ele encapsula os dados no corpo da requisição e consegue transportar mais dados que o GET, portanto, vamos utilizar o POST em todo lugar.
+
+Porém, se existem dois verbos diferentes, é porque eles foram feitos para serem utilizados em locais diferentes.
+
+As requisições do tipo GET são recomendadas para obter dados de um determinado recurso. Como em um formulário de busca ou em uma listagem de todos os produtos cadastrados.
+
+Já as requisições POST são mais utilizadas para para enviar informações para serem processadas, como por exemplo, criar algum recurso, como um produto, ou um cliente.

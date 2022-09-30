@@ -1,0 +1,17 @@
+// 1 - História
+- 1950s = Computador Eletrônico
+- 1960s = ARPANET - Departamento de Defesa Americano
+- 1970s = TCP/IP - Robert E. Kahn & Vint Cerf
+- 1980s = WWW - Tim Berners-Lee
+- 1990s = Internet no Brasil
+- 2000s = iG, Redes Sociais, Internet em Casa
+
+TCP/IP
+// 2 - Camadas:
+Padrão Layers
+1. Aplicação - Protocolos (HTTP, FTP, SMTP...); comunicação processo-A-processo; numero da Porta
+2. Transporte - Protocolos (TCP (Confiável) - UDP (Melhor esforço)); comunicação host-A-host
+3. Internet - Endereço IP; conexão entre redes; tranferêrencia de pacotes
+4. Rede/Física - Wifi; Ethernet; MAC addres
+
+...

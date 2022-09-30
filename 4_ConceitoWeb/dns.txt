@@ -1,0 +1,22 @@
+- Servidor DNS:
+1. Traduz os nomes de domínio em endereço IP
+Ex: www.cod3r.com.br - 56.69.61.89
+2. Funciona sobre o protocolo UDP na porta 53
+
+- Passos:
+1. Usuário informa o endereço no Browser
+2. Computador envia uma consulta DNS para o servidor local
+3. O servidor responde com o endereço IP
+4. Computador acessa o servidor a partir do IP obtido
+
+- Buscas:
+1. Recursiva - DNS primario pergunta pro secundario
+2. Iterativa - passa referência pra outro servidor DNS (mais proximo)
+
+- Registros:
+DNS Records
+1. A - IPv4
+2. AAAA - IPv6
+3. MX - Servidor de Email
+4. NS - Servidor DNS
+5. CNAME - Canonical Name (apelido)

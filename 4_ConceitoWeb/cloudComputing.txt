@@ -1,0 +1,16 @@
+- Computação em nuvem:
+1. Virtualização
+2. Armazenamento e processamento podem ser escalonáveis (paga de acordo com o uso)
+
+- Infraestrutura como serviço (IaaS):
+1. Amazon Web Service (AWS) (maior provedor de nuvem do MUNDO)
+
+- Plataforma como serviço (PaaS):
+1. Google Cloud Platform
+
+- Software como serviço (SaaS):
+1. Salesforce
+
+- Função como serviço (FaaS):
+1. AWS Elastic Beanstalk
+2. Google App Engine

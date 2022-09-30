@@ -1,0 +1,15 @@
+- HTTPS:
+1. HTTP + TLS (Transport Layer Security Protocol) (SSL v4)
+2. HTTP + SSL (Secure Sockets Layer Protocol)
+
+- Certificado != Protocolo
+1. Certificados usados com SSL/TLS
+
+- HTTPSeguro:
+1. Dados criptografados usando os protocolos TLS ou SSL
+2. Protege contra interceptação (MITM)
+3. Criptografa todas as informações: URL, cookies e headers
+4. Usa certificados digitais
+    - Autoridades Certificadoras (CA)
+    1. Organizações que emitem e validam os certificados
+    Ex: Lets encrypt - FREE

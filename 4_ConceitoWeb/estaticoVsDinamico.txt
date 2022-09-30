@@ -1,0 +1,6 @@
+- Conteúdo Estático - ler arquivos e devolver
+    Ex: pagina html que possui referências para css, js, imagens, fontes, etc
+    Obs: Sempre que recarregar a pagina vai ter exatamente o msm conteudo
+    
+- Conteúdo Dinâmico - gerado a partir de um código (back-end)
+    Ex: gera o html a partir de um banco de dados

@@ -1,0 +1,25 @@
+HTTP - HyperText Transfer Protocol
+
+- Características:
+1. Camada de Aplicação
+2. Protocolo Stateless = ñ tem estado (todo requisição como se fosse primeira vez)
+3. Cliente-Servidor = (requisição e resposta)
+4. TCP/IP = opera em cima desse protocolo
+5. HTML, CSS, JS, Mídias = retorna conteudos da página web
+
+- Métodos HTTP:
+1. Get - os parâmetros vão no corpo da url
+2. Post - os parâmetros vão no corpo da requisição
+3. Put
+4. Delete
+5. Trace
+6. Options
+7. Connect
+8. Head
+
+- Grupos de Status HTTP:
+1. 1xx - Informação
+2. 2xx - Sucesso
+3. 3xx - Redirecionamento
+4. 4xx - Erro no Cliente
+5. 5xx - Erro no Servidor

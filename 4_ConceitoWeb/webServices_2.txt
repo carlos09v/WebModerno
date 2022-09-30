@@ -1,0 +1,17 @@
+- Web Service (serviços que rodam na web):
+1. Simple Object Access Protocol (SOAP) (antigo e mais burocrático)
+    Ex: XML - WSDL - RPC
+2. Representational State Transfer (REST) (simples e leve)
+    Ex: JSON - HTTP
+
+- Arquiteturas:
+1. SOA - Service-Oriented Architecture
+2. Micro Service - quebra uma aplicação em micro serviços | serviços independentes
+
+- Convenções RESTful
+URL        |      Método      |       Descrição
+/clientes         POST              Novo cliente
+/clientes         GET               Obtem todos
+/clientes/36      GET               Obtem cliente 36
+/clientes/12      GET               Atualiza cliente 12
+/clientes/41      Delete            Exclui cliente 41

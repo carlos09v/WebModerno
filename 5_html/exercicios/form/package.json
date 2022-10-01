@@ -1,0 +1,22 @@
+{
+  "name": "form",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "1.18.2",
+    "express": "4.16.3"
+  },
+  "_comments": {
+    "0": "npm init -y",
+    "1": "npm i --save express@4.16.3 body-parser@1.18.2 -E",
+    "2": "node server.js | Ficar escutando a porta"
+  }
+}

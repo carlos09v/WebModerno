@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Desafio Menu</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        /* Minha forma + Aula - */
+        /*
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Oswald', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            background-color: lightgray;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100vw;
+            padding: 15px;
+            background-color: #333;
+            border-bottom: 5px solid #4faddb;
+        }
+
+        header > nav {
+            flex-grow: 1;
+        }
+
+        header > nav a {
+            padding: 15px;
+        }
+        
+        header > nav > ul {
+            list-style: none;
+            display: flex;
+        }
+        
+        header > nav > ul > li {
+            cursor: pointer;
+            margin: 0px 10px;
+        }
+
+        header > nav a:hover {
+            color: black;
+            background-color: #4faddb;
+        }
+
+        header > div.logo {
+            margin-right: 2rem;
+        }
+
+        header a {
+            text-decoration: none;
+            color: #eee;
+        }
+        
+        .menu-toggle {
+            display: none;
+        }
+
+        .botao {
+            border-radius: 30px;
+            padding: 10px 25px;
+            margin: 10px;
+        }
+
+        .destaque {
+            background-color: #f50a31;
+            color: #fff;
+        }
+        */
+        /* Aula -  */
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Oswald', sans-serif;
+        }
+
+        .cabecalho {
+            background-color: #333;
+            border-bottom: 5px solid #4faddb;
+            height: 80px;
+            box-sizing: content-box;
+        }
+
+        .logo {
+            display: inline-block;
+            height: 80px;
+            padding: 15px;
+        }
+
+        .logo img {
+            height: 100%;
+        }
+
+        .menu-toggle {
+            float: right;
+            color: #eee;
+            background-color: #555;
+            border: 1px solid #777;
+            height: 40px;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin: 20px 15px;
+        }
+
+        .menu {
+            display: inline-block;
+            vertical-align: top;
+            height: 80px;
+            padding: 25px;
+        }
+
+        .menu li {
+            display: inline-block;
+        }
+
+        .cabecalho a {
+            text-decoration: none;
+            color: #eee;
+        }
+
+        .menu a {
+            padding: 15px;
+        }
+
+        .menu a:hover,
+        .menu a.selected {
+            background-color: #4faddb;
+            color: #000;
+        }
+
+        .autenticacao {
+            float: right;
+            height: 80px;
+            padding: 25px;
+        }
+
+        .botao {
+            border-radius: 30px;
+            padding: 10px 25px;
+            margin: 10px;
+        }
+
+        .destaque {
+            background-color: #f50a31;
+            color: #fff;
+        }
+
+        @media (min-width: 679px) {
+            .menu-toggle {
+                display: none;
+            }
+        }
+
+        @media (max-width: 680px) {
+            .menu {
+                display: none;
+            }
+        }
+
+        @media (max-width: 910px) {
+            .autenticacao {
+                display: none;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <a href="#inicio">
+                <img src="http://files.cod3r.com.br/curso-web/logo.png" alt="Logo" width="350" />
+            </a>
+        </div>
+        <button class="menu-toggle">
+            <i class="fa fa-lg fa-bars"></i>
+        </button>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="#inicio">Início</a>
+                </li>
+                <li>
+                    <a href="#cursos">Cursos</a>
+                </li>
+                <li>
+                    <a href="#sobre">Sobre</a>
+                </li>
+                <li>
+                    <a href="#contato">Contato</a>
+                </li>
+            </ul>
+        </nav>
+        <aside class="autenticacao">
+            <a href="#login">Login</a>
+            <a href="#registrar" class="botao destaque">Registrar</a>
+        </aside>
+    </header>
+
+    <script>
+        // Quando trocar a #
+        window.onhashchange = e => {
+            const oldURL = e.oldURL.split('#')[1] // Pegar a parte dps do #
+            const newURL = e.newURL.split('#')[1]
+
+            const oldLink = document.querySelector(`.menu a[href='#${oldURL}']`)
+            const newLink = document.querySelector(`.menu a[href='#${newURL}']`)
+            
+            oldLink && oldLink.classList.remove('selected')
+            newLink && newLink.classList.add('selected')
+        }
+    </script>
+</body>
+
+</html>

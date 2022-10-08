@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Selectors</title>
+    <link rel="stylesheet" href="./css/tag.css">
+    <style>
+        /* Seletores
+        * - Tudo
+        Elem
+        .class
+        #id
+        [atrib]
+        :pseudo-class
+        ::pseudo-elementos
+
+        div + p - adjcent sibling
+        div ~ p - general sibling
+        div > p - child
+        div p - descendant
+
+        span:nth-child(1)
+        section > :nth-child(odd) -- Selecionas os filhos impares
+        section > span:nth-of-type(2) -- Seleciona o segundo elemento do tipo span
+        */
+
+        #aninhado > div {
+            color: #ff0;
+            background-color: #f77;
+        }
+
+        [feira*=sa] {
+            color: #ff0;
+            background-color: #f77;
+        }
+    </style>
+</head>
+
+<body>
+    <div class='tag'>
+        <div class='tag'>
+            <p class='tag'>1</p>
+            <ul class='tag' feira='casa'>
+                <li>Arroz</li>
+                <li>Feijão</li>
+            </ul>
+            <ul class='tag' feira='escritorio empresa'>
+                <li>Café</li>
+                <li>Água</li>
+            </ul>
+            <ol id='aprovados' class='tag'>
+                <li>Maria</li>
+                <li>Pedro</li>
+                <li>Ana</li>
+            </ol>
+            <div id='aninhado' class='tag'>
+                <div class="tag">
+                    <section class='tag'>
+                        <span class='tag'>1</span>
+                        <p class='tag'>2</p>
+                        <span class='tag'>3</span>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/tag!--.js"></script>
+</body>
+
+</html>

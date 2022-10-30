@@ -1,0 +1,6 @@
+1. CommonJS (Padrão Node) - Module.exports
+2. Padrão ECMA - Import/From
+
+3. Workflow - Desenvolvimento/Produção
+    3.1 - Gulp
+    3.2 - Webpack (mais pratico)
